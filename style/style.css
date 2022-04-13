@@ -1,0 +1,187 @@
+body{
+    background-color: black;
+    width: 100%;
+}
+.img_logo{
+    width: 30px;
+    height: 30px;
+}
+
+.img_central{
+        width: 50px;
+        height: 50px;
+}
+.titulo_primario{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+.imagen_indice{
+    font-size: 50px;
+    color: green;
+}
+.titulo_secundario{
+   background-color: grey;}
+.titulo_secundario1{
+    display: flex;
+    justify-content: center;
+    color: coral;
+    font-size: 40px;
+}
+.boton_pedido{
+    text-align: end;
+    color: white;
+}
+.navegadores{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    
+}
+.navegadores a{
+    padding: 1px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    border: 2px solid green;
+    color: white;
+    font-size: 25px
+}
+.centro_pagina{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px ;
+    grid-gap: 5px;
+    justify-items: stretch;
+    align-items: flex-start;
+  }
+
+.centro_pagina h2{
+  text-align: center;
+  border: white 5px solid;
+  grid-column-start: 1; 
+  grid-column-end: 5; 
+  grid-row-start: 1; 
+  grid-row-end: 2;
+  color: grey;
+  
+}
+
+
+.centro_pagina h3{
+    background: grey;
+    text-align: center;
+    border: white 5px solid;
+    grid-column-start: 1; 
+    grid-column-end: 5; 
+    grid-row-start: 2;
+    grid-row-end: 4;
+    color: white;
+  }
+  .contenido_principal{
+    display: flex;
+    background-color: grey;
+  }
+.img_video{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    padding: 2rem;
+}
+.img_video iframe{
+  justify-content: flex-start;
+  order: 1;
+  border: 1px solid white;
+  
+}
+.img_video img{
+    justify-content: flex-end;
+    width: 500px;
+    float: right;
+    order: 3;
+    border: 1px solid white;
+}
+    
+.texto_central{
+    justify-content: center;
+    font-size: 20px;
+    order: 2;
+    color: white;
+  }
+  @media (min-width: 300px) {
+    .footer{
+        background-color: green;
+        text-align: center;
+        margin-top: 10%;
+      }
+    }
+  .footer{
+    background-color: goldenrod;
+    text-align: center;
+    margin-top: 10%;
+  }
+
+  /* recetas */
+.img_receta{
+      padding: 10px;
+      margin-left: 3rem; 
+      border: 2px solid white; 
+      float: right; 
+      width: 600px;
+}
+
+.listas{
+    color: white;
+}
+.listas h1{
+    color: green;
+    font-size: 30px;
+}
+.listas h4{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.formulario{
+    text-align: center;
+    color: white;
+
+    margin: 0 auto;
+    font-size: 25px;
+    border: 1rem outset grey;
+}
+.form{
+    text-align: center;
+    color: green;
+    background-color: goldenrod;
+}
+.centro_pag{
+    text-align: center;
+    color: white;
+}
+@media screen and (max-width: 480px){
+  body{
+    background-color: aqua;
+  }
+  .pepe{
+    width: 100%;
+  }
+  .img_video{
+    display: grid;
+  }
+  iframe.video{
+    max-width: 350px;
+  }
+  img.img_cafe{
+    max-width: 350px;
+  }
+  div.navegadores{
+    padding: 0;
+    justify-content: left;
+  }
+  nav a{
+    display: inherit;
+  }
+}
+

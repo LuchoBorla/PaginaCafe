@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Nuestro Café</title>
+</head>
+<body>
+<header  class="titulo_primario">
+    
+    <h1 class="imagen_indice">Nuestro café
+        <a href="index.html"><img class="img_central" src="image/13071857_488754797983071_7021874136898568706_o.png"></a>
+    </h1>
+</header>
+    <div class=" titulo_secundario">
+       <p class="titulo_secundario1">Especialistas en café</p>
+        <p class="boton_pedido"> <b> Hace tu pedido</b> <button type="button">
+             <a href="tel:358319391"><img class="img_logo"  src="image/whatsapp.png" width="20px" alt="whatsApp">  </button></a> </p>
+       </div> 
+       <div class="navegadores">
+        <nav >
+          
+            <a href="index.html">Inicio</a>
+            <a href="nuestrasrecetas.html">Nuestras Recetas</a>
+            <a href="reservas.html">Reservas</a> 
+            <a href="quienesomos.html">¿Quienes somos?</a> 
+        </nav>
+    </div>
+    <form class="form" action="envio.php" method="post">
+        <fieldset >
+            <legend><b> Haga su Reserva</b> </legend>
+        
+        <table class="formulario" >
+            
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" placeholder="Su Nombre"></td>
+            </tr>
+            <tr>
+                <td>Apellido</td>
+                <td><input type="text" placeholder="Su Nombre"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="Tu Email"></td>
+            </tr>
+            <tr>
+                <td>Telefono</td>
+                <td><input type="tel" placeholder="Su Telefono"></td>
+            </tr>
+            <tr>
+                <td>Cantidad de Personas</td>
+                <td><input type="number" min="0"></td>
+            </tr>
+            <tr>
+                <td>Fecha</td>
+                <td><input type="date" name="Reserva" step="1" min="2022-3-15" max="2025-12-31" value="2022-3-15" ></td>
+            </tr>
+            <tr>
+                <td>Mensaje</td>
+                <td><textarea cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+        </fieldset>
+    </form>
+    
+
+ 
+ <!-- Seccion footer :) -->
+  <!-- Seccion footer :) -->
+  <footer class="footer">
+        
+    <p>
+        Ubicacion:<br>
+        <a href="https://www.google.com.ar/maps/">
+        <img class="img_logo" src="image/icons8-ubicación-en-todo-el-mundo-24.png" alt="mapa"></a> Rio Cuarto, Cordoba, Argentina<br>
+    </p>
+
+
+    <div>
+        <p>Contacto :</p>
+    <a href="tel:3584319">
+        <img class="img_logo" src="image/whatsapp.png">3584319391
+    </a>
+        <br>
+    <a href="mailto:greenbar@gmail.com">
+        <img class="img_logo" src="image/icons8-email-64.png">greenbar@gmail.com
+    </a></div>
+  
+</footer>
+
+
+
+</body>
+</html>
