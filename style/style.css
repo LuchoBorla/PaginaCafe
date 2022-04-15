@@ -10,15 +10,18 @@ body{
 .img_central{
         width: 50px;
         height: 50px;
+        transform: skewY(26deg);
 }
 .titulo_primario{
     display: flex;
     justify-content: center;
-    background-color: grey;
+    background-image: linear-gradient(to left, yellow, red);
 }
 .imagen_indice{
     font-size: 50px;
     color: green;
+    animation: bounce;
+    animation-duration: 10s;
 }
 .titulo_secundario{
    background-color: grey;}
@@ -31,7 +34,10 @@ body{
 .boton_pedido{
     text-align: end;
     color: white;
+    animation:zoomIn;
+    animation-duration: 10s;
 }
+
 .navegadores{
     width: 100%;
     display: flex;
@@ -45,8 +51,13 @@ body{
     padding-right: 3rem;
     border: 2px solid green;
     color: white;
-    font-size: 25px
+    font-size: 25px;
+    transition: background-color .5s;
 }
+.navegadores :hover{
+  background-color: gold;
+}
+
 .centro_pagina{
     display: grid;
     grid-template-rows: 100px 100px;
@@ -117,7 +128,7 @@ body{
       }
     }
   .footer{
-    background-color: goldenrod;
+    background-image: linear-gradient(to left, yellow, red);
     text-align: center;
     margin-top: 10%;
   }
@@ -184,4 +195,6 @@ body{
     display: inherit;
   }
 }
+
+
 
